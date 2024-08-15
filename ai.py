@@ -4,8 +4,8 @@ from poe_api_wrapper import AsyncPoeApi
 import asyncio
 
 tokens = {
-    'p-b': '-vK5SFWPMWmMq1le9JH9nQ%3D%3D',
-    'p-lat': 'do7g%2Bc0dSHkuwsVPovwexhBFGbjQHQEY7djD6DjCgA%3D%3D'
+    'p-b': '',
+    'p-lat': ''
 }
 
 async def fetch_response(client, history):
