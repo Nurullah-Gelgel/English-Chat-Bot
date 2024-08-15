@@ -1,0 +1,4 @@
+speechrecognition
+pyttsx3
+poe-api-wrapper
+asyncio
