@@ -2,14 +2,21 @@
 English Speaking Practice Bot
 
 Overview
+
 This project is a Python-based English-speaking practice bot designed to enhance users' English language skills through interactive conversations. The bot utilizes voice recognition to capture user speech, processes the input using an AI API, and provides spoken feedback with corrections when necessary. It's an excellent tool for practicing English speaking and improving grammar in real-time.
 
 Features
+
 Voice Recognition: Listens to user input through a microphone and converts spoken words into text.
+
 AI Response Generation: Uses an AI model to generate contextually relevant responses based on the conversation history.
+
 Grammar Correction: Automatically detects and corrects mistakes in user inputs and AI-generated responses, providing suggestions for improvement.
+
 Text-to-Speech: Converts the bot's textual responses into spoken words using a speech engine, allowing for a fully interactive experience.
+
 Continuous Conversation: Maintains an ongoing dialogue with the user until they say "exit," providing a fluid and engaging conversation experience.
+
 Personalized Feedback: Provides context-aware corrections and suggestions based on user input and progress.
 
 Requirements
