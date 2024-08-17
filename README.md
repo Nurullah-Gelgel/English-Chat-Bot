@@ -2,17 +2,15 @@
 English Speaking Practice Bot
 
 Overview
-This project is a Python-based English-speaking practice bot. The bot uses the user's voice input, recognizes the speech, processes the input with an AI API, corrects any mistakes, and provides a spoken response. The bot is designed to help users improve their English language skills through conversation, providing corrections when necessary.
+This project is a Python-based English-speaking practice bot designed to enhance users' English language skills through interactive conversations. The bot utilizes voice recognition to capture user speech, processes the input using an AI API, and provides spoken feedback with corrections when necessary. It's an excellent tool for practicing English speaking and improving grammar in real-time.
 
 Features
-Voice Recognition: Listens to user input through a microphone and converts it to text.
-AI Response Generation: Uses an AI model to generate responses based on the conversation history.
-
-Grammar Correction: Corrects any mistakes in the AI-generated response.
-
-Text-to-Speech: Reads the bot's response out loud using a speech engine.
-
-Continuous Conversation: Engages in an ongoing conversation until the user says "exit."
+Voice Recognition: Listens to user input through a microphone and converts spoken words into text.
+AI Response Generation: Uses an AI model to generate contextually relevant responses based on the conversation history.
+Grammar Correction: Automatically detects and corrects mistakes in user inputs and AI-generated responses, providing suggestions for improvement.
+Text-to-Speech: Converts the bot's textual responses into spoken words using a speech engine, allowing for a fully interactive experience.
+Continuous Conversation: Maintains an ongoing dialogue with the user until they say "exit," providing a fluid and engaging conversation experience.
+Personalized Feedback: Provides context-aware corrections and suggestions based on user input and progress.
 
 Requirements
 
@@ -40,10 +38,34 @@ poe-api-wrapper
 asyncio
 ```
 
-API Tokens:
+How to get your Token
 
-You need to replace the tokens dictionary in the code with your actual API tokens for the Poe API.
-Update the bot parameter in the fetch_response function if you are using a different AI model.
+Getting p-b and p-lat cookies (required)
+Sign in at https://poe.com/
+
+F12 for Devtools (Right-click + Inspect)
+
+Chromium: Devtools > Application > Cookies > poe.com
+Firefox: Devtools > Storage > Cookies
+Safari: Devtools > Storage > Cookies
+Copy the values of p-b and p-lat cookies
+
+Getting formkey (optional)
+Important
+
+By default, poe-api-wrapper will automatically retrieve formkey for you. If it doesn't work, please pass this token manually by following these steps:
+
+There are two ways to get formkey:
+
+F12 for Devtools (Right-click + Inspect)
+
+1st Method: Devtools > Network > gql_POST > Headers > Poe-Formkey
+
+Copy the value of Poe-Formkey
+
+2nd Method: Devtools > Console > Type: allow pasting > Paste this script: window.ereNdsRqhp2Rd3LEW()
+
+Copy the result
 
 Usage
 Run the Bot:
